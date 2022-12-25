@@ -761,17 +761,6 @@ main {
 /**
  * responsive for larger than 500px screen
  */
-@media (width <= 500px) {
-  .about .btn {
-    text-align: center;
-    max-width: unset;
-    width: 100%;
-  }
-  .contact .btn {
-    max-width: unset;
-    width: 100%;
-  }
-}
 
 @media (width <= 699px) {
   .hero-banner:nth-child(2) {
