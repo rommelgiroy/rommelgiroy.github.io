@@ -821,10 +821,6 @@ main {
     max-width: 700px;
   }
 
-  .about .btn {
-    max-width: max-content;
-  }
-
   .project .btn-project {
     margin-top: 80px;
   }
