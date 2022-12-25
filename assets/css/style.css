@@ -502,6 +502,11 @@ main {
 .about {
   padding-block: var(--section-padding);
 }
+.about .btn {
+  text-align: center;
+  max-width: unset;
+  width: 100%;
+}
 
 .about-banner {
   margin-top: 50px;
@@ -704,6 +709,8 @@ main {
 
 .contact .btn {
   margin: auto;
+  max-width: unset;
+  width: 100%;
 }
 
 /*-----------------------------------*\
@@ -814,13 +821,9 @@ main {
     max-width: 700px;
   }
 
-  /* .about .btn {
+  .about .btn {
     max-width: max-content;
   }
-
-  .about .btn-secondary {
-    margin-bottom: 0;
-  } */
 
   .project .btn-project {
     margin-top: 80px;
@@ -966,11 +969,6 @@ main {
   .skills-content {
     margin-bottom: 0;
   }
-
-  /* .skills-toggle {
-    margin-inline: 0;
-  } */
-
   /**
    * CONTACT
    */
