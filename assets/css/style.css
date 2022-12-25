@@ -814,13 +814,13 @@ main {
     max-width: 700px;
   }
 
-  .about .btn {
+  /* .about .btn {
     max-width: max-content;
   }
 
   .about .btn-secondary {
     margin-bottom: 0;
-  }
+  } */
 
   .project .btn-project {
     margin-top: 80px;
