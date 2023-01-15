@@ -235,87 +235,78 @@
         - #PROJECTS
       -->
 
-        <section class="project swiper" id="portfolio" data-aos="zoom-in">
-          <h2 class="h3 section-title">Portfolio</h2>
-          <div class="swiper-wrapper">
-            <div class="card swiper-slide">
-              <div class="card__image">
-                <img src="/assets/images/project1.jpg" alt="card image" />
-              </div>
-
-              <div class="card__content">
-                <span class="card__title">Web Designer</span>
-                <p class="card__text">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit
-                  veritatis labore provident non tempora odio est sunt, ipsum
-                </p>
-                <button class="card__btn">View</button>
+        <section class="project" id="portfolio">
+          <h2 class="h3 section-title" data-aos="zoom-in">Portfolio</h2>
+          <div class="projects-container" data-aos="zoom-in">
+            <div class="project-card">
+              <img src="/assets/images/project2.jpg" alt="Project 1" />
+              <h3>MeasureUp</h3>
+              <p>Project 1 Description</p>
+              <div class="buttons">
+                <button class="btn btn-primary" onclick="playVideo('2.mp4')">
+                  Demo
+                </button>
+                <a href="project1-code-link" class="btn btn-primary">Code</a>
               </div>
             </div>
 
-            <div class="card swiper-slide">
-              <div class="card__image">
-                <img src="/assets/images/project2.jpg" alt="card image" />
-              </div>
-
-              <div class="card__content">
-                <span class="card__title">Ui Designer</span>
-                <p class="card__text">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit
-                  veritatis labore provident non tempora odio est sunt, ipsum
-                </p>
-                <button class="card__btn">View</button>
+            <div class="project-card">
+              <img src="/assets/images/project2.jpg" alt="Project 2" />
+              <h3>Programmer's Quizz</h3>
+              <p>Project 2 Description</p>
+              <div class="buttons">
+                <button class="btn btn-primary" onclick="playVideo('1.mp4')">
+                  Demo
+                </button>
+                <a href="project2-code-link" class="btn btn-primary">Code</a>
               </div>
             </div>
 
-            <div class="card swiper-slide">
-              <div class="card__image">
-                <img src="/assets/images/project3.jpg" alt="card image" />
-              </div>
-
-              <div class="card__content">
-                <span class="card__title">Web Developer</span>
-                <p class="card__text">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit
-                  veritatis labore provident non tempora odio est sunt, ipsum
-                </p>
-                <button class="card__btn">View</button>
+            <div class="project-card">
+              <img src="/assets/images/project2.jpg" alt="Project 3" />
+              <h3>Electric Bill Calculator</h3>
+              <p>Project 3 Description</p>
+              <div class="buttons">
+                <button class="btn btn-primary" onclick="playVideo('1.mp4')">
+                  Demo
+                </button>
+                <a href="project3-code-link" class="btn btn-primary">Code</a>
               </div>
             </div>
 
-            <div class="card swiper-slide">
-              <div class="card__image">
-                <img src="/assets/images/project4.jpg" alt="card image" />
-              </div>
-
-              <div class="card__content">
-                <span class="card__title">Mobile Designer</span>
-                <p class="card__text">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit
-                  veritatis labore provident non tempora odio est sunt, ipsum
-                </p>
-                <button class="card__btn">View</button>
+            <div class="project-card">
+              <img src="/assets/images/project6.jpg" alt="Project 4" />
+              <h3>Expenses Tracker</h3>
+              <p>Project 4 Description</p>
+              <div class="buttons">
+                <button class="btn btn-primary" onclick="playVideo('1.mp4')">
+                  Demo
+                </button>
+                <a href="project4-code-link" class="btn btn-primary">Code</a>
               </div>
             </div>
 
-            <div class="card swiper-slide">
-              <div class="card__image">
-                <img src="/assets/images/project2.jpg" alt="card image" />
-              </div>
-
-              <div class="card__content">
-                <span class="card__title">Mobile Designer</span>
-                <p class="card__text">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit
-                  veritatis labore provident non tempora odio est sunt, ipsum
-                </p>
-                <button class="card__btn">View</button>
+            <div class="project-card">
+              <img src="/assets/images/project6.jpg" alt="Project 5" />
+              <h3>Cafe's Invetory Managemet System</h3>
+              <p>Project 5 Description</p>
+              <div class="buttons">
+                <button class="btn btn-primary" onclick="playVideo('1.mp4')">
+                  Demo
+                </button>
+                <a href="project5-code-link" class="btn btn-primary">Code</a>
               </div>
             </div>
           </div>
-
-          <div class="swiper-pagination"></div>
         </section>
+
+        <!-- 
+        - #VIDEO DEMO
+      -->
+        <div class="popup-video" id="videoPlayer">
+          <span onclick="stopVideo()">&times;</span>
+          <video src="1.mp4" autoplay controls id="myVideo"></video>
+        </div>
 
         <!-- 
         - #CONTACT
@@ -338,6 +329,10 @@
         </section>
       </article>
     </main>
+
+    <!-- 
+        - #PROJECTS INFO
+      -->
 
     <!-- 
     - #FOOTER
@@ -366,47 +361,25 @@
 
     <!-- 
     - ionicon link
-  -->
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
+  --></body>
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+  ></script>
 
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+  ></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script> -->
 
-    <script>
-      var swiper = new Swiper(".project", {
-        effect: "coverflow",
-        grabCursor: true,
-        centeredSlides: true,
-        slidesPerView: "auto",
-        coverflowEffect: {
-          rotate: 0,
-          stretch: 0,
-          depth: 300,
-          modifier: 2,
-          slideShadows: false,
-        },
-        pagination: {
-          el: ".swiper-pagination",
-          dynamicBullets: true,
-          clickable: true,
-        },
-      });
-    </script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-    <script>
-      AOS.init({
-        once: true,
-        duration: 1000,
-      });
-    </script>
-  </body>
+  <script>
+    AOS.init({
+      once: true,
+      duration: 1000,
+    });
+  </script>
 </html>

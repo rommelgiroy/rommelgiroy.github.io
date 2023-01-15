@@ -97,3 +97,19 @@ if (localStorage.getItem("theme") === "light_theme") {
   document.body.classList.remove("light_theme");
   document.body.classList.add("dark_theme");
 }
+
+/**
+ * open modal popup and playe video
+ */
+
+const videoPlayer = document.getElementById("videoPlayer");
+const myVideo = document.getElementById("myVideo");
+
+function stopVideo() {
+  videoPlayer.style.display = "none";
+}
+
+function playVideo(file) {
+  myVideo.src = file;
+  videoPlayer.style.display = "block";
+}
