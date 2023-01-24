@@ -583,7 +583,7 @@ main {
 }
 
 .about-banner img {
-  border: 8px solid var(--bg-primary);
+  border: 8px solid var(--bg-secondary);
 }
 
 /*-----------------------------------*\
