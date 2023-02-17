@@ -15,12 +15,6 @@
     <!-- -aos animation -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
-    <!-- Link Swiper's CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
-    />
-
     <!--  - google font link-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -36,11 +30,11 @@
   -->
     <header class="header" data-header>
       <div class="container">
-        <h1 class="h1 logo">
+        <h1 class="h1 logo" data-aos="fade-down" data-aos-delay="550">
           <a href="#">@rommelgiroy</a>
         </h1>
 
-        <div class="navbar-actions">
+        <div class="navbar-actions" data-aos="fade-down">
           <button
             class="theme-btn"
             aria-label="Change Theme"
@@ -62,25 +56,22 @@
           <span class="three"></span>
         </button>
 
-        <nav class="navbar" data-navbar>
+        <nav class="navbar">
           <ul class="navbar-list">
-            <!-- <li>
-              <a href="#home" class="navbar-link">Home</a>
-            </li> -->
 
-            <li>
+            <li data-aos="fade-down" data-aos-delay="400">
               <a href="#about" class="navbar-link">About</a>
             </li>
 
-            <li>
+            <li data-aos="fade-down" data-aos-delay="300">
               <a href="#skills" class="navbar-link">Skills</a>
             </li>
 
-            <li>
+            <li data-aos="fade-down" data-aos-delay="200">
               <a href="#portfolio" class="navbar-link">Portfolio</a>
             </li>
 
-            <li>
+            <li data-aos="fade-down" data-aos-delay="100">
               <a href="#contact" class="navbar-link">Contact</a>
             </li>
           </ul>
@@ -95,10 +86,10 @@
       -->
 
         <section class="hero" id="home">
-          <figure class="hero-content" data-aos="zoom-in">
+          <figure class="hero-content" data-aos="fade-right" data-aos-delay="1000">
             <p>Hi <span class="wave">👋</span>, my name is</p>
             <h2 class="h3 section-title">Rommel Giroy</h2>
-            <h2 class="h3 section-title">Let's make your ideas a reality!</h2>
+            <h2 class="h3 section-title tag">Let's make your ideas a reality!</h2>
             <div class="social-media">
               <a href="mailto:giroyrommel03@gmail.com">
                 <ion-icon name="mail"></ion-icon>
@@ -116,14 +107,14 @@
               </a>
             </div>
           </figure>
-          <div class="hero-banner banner-content" data-aos="zoom-in">
+          <div class="hero-banner banner-content" data-aos="fade-left" data-aos-delay="1000">
             <picture>
               <source
-                srcset="./assets/images/devlopment-bg.png"
+                srcset="./assets/images/development-bg.png"
                 media="(min-width: 768px)"
               />
               <source
-                srcset="./assets/images/devlopment-bg.png"
+                srcset="./assets/images/development-bg.png"
                 media="(min-width: 500px)"
               />
               <img
@@ -140,13 +131,13 @@
       -->
 
         <section class="about" id="about">
-          <figure class="about-banner" data-aos="zoom-in">
+          <figure class="about-banner" data-aos="fade-right" data-aos-delay="1000">
             <img
               src="./assets/images/pic.jpg"
               alt="A man in a alice blue shirt with a thinking expression"
             />
           </figure>
-          <div class="about-content section-content" data-aos="zoom-in">
+          <div class="about-content section-content" data-aos="fade-left" data-aos-delay="1000">
             <h2 class="h3 section-title">About Me</h2>
             <p class="section-text">
               Hi! My name is Rommel Giroy, and I am a programmer and computer
@@ -173,10 +164,10 @@
 
         <section class="skills" id="skills">
           <div class="skills-content section-content">
-            <h2 class="h3 section-title" data-aos="zoom-in">Skills</h2>
+            <h2 class="h3 section-title" data-aos="fade-down" data-aos-delay="1000">Skills</h2>
             <div class="skills-box" data-skills-box>
               <ul class="skills-list">
-                <li data-aos="fade-down" data-aos-delay="900">
+                <li data-aos="fade-down" data-aos-delay="1600">
                   <div class="skill-card">
                     <div class="card-icon">
                       <img src="./assets/images/csharp.png" alt="C#" />
@@ -185,7 +176,7 @@
                   <h4>C#</h4>
                 </li>
 
-                <li data-aos="fade-down" data-aos-delay="700">
+                <li data-aos="fade-down" data-aos-delay="1500" >
                   <div class="skill-card">
                     <div class="card-icon">
                       <img src="./assets/images/vbnet.svg" alt="VB.Net" />
@@ -194,7 +185,7 @@
                   <h4>VB.NET</h4>
                 </li>
 
-                <li data-aos="fade-down" data-aos-delay="500">
+                <li data-aos="fade-down" data-aos-delay="1400">
                   <div class="skill-card">
                     <div class="card-icon">
                       <img
@@ -206,7 +197,7 @@
                   <h4>Mysql</h4>
                 </li>
 
-                <li data-aos="fade-down" data-aos-delay="300">
+                <li data-aos="fade-down" data-aos-delay="1200">
                   <div class="skill-card">
                     <div class="card-icon">
                       <img
@@ -218,7 +209,7 @@
                   <h4>Ms Sql Server</h4>
                 </li>
 
-                <li data-aos="fade-down" data-aos-delay="100">
+                <li data-aos="fade-down" data-aos-delay="900">
                   <div class="skill-card">
                     <div class="card-icon">
                       <img src="./assets/images/mongodb.png" alt="MongoDB" />
@@ -236,9 +227,9 @@
       -->
 
         <section class="project" id="portfolio">
-          <h2 class="h3 section-title" data-aos="zoom-in">Portfolio</h2>
+          <h2 class="h3 section-title" data-aos="fade-down" data-aos-delay="900">Portfolio</h2>
           <div class="projects-container" data-aos="zoom-in">
-            <div class="project-card">
+            <div class="project-card" data-aos="fade-down" data-aos-delay="1600">
               <img src="/assets/images/project2.jpg" alt="Project 1" />
               <h3>MeasureUp</h3>
               <p>Project 1 Description</p>
@@ -250,7 +241,7 @@
               </div>
             </div>
 
-            <div class="project-card">
+            <div class="project-card" data-aos="fade-down" data-aos-delay="1500">
               <img src="/assets/images/project2.jpg" alt="Project 2" />
               <h3>Programmer's Quizz</h3>
               <p>Project 2 Description</p>
@@ -262,7 +253,7 @@
               </div>
             </div>
 
-            <div class="project-card">
+            <div class="project-card" data-aos="fade-down" data-aos-delay="1400">
               <img src="/assets/images/project2.jpg" alt="Project 3" />
               <h3>Electric Bill Calculator</h3>
               <p>Project 3 Description</p>
@@ -274,7 +265,7 @@
               </div>
             </div>
 
-            <div class="project-card">
+            <div class="project-card" data-aos="fade-down" data-aos-delay="1200">
               <img src="/assets/images/project6.jpg" alt="Project 4" />
               <h3>Expenses Tracker</h3>
               <p>Project 4 Description</p>
@@ -286,7 +277,7 @@
               </div>
             </div>
 
-            <div class="project-card">
+            <div class="project-card" data-aos="fade-down" data-aos-delay="900">
               <img src="/assets/images/project6.jpg" alt="Project 5" />
               <h3>Cafe's Invetory Managemet System</h3>
               <p>Project 5 Description</p>
@@ -312,8 +303,8 @@
         - #CONTACT
       -->
 
-        <section class="contact" id="contact" data-aos="zoom-in">
-          <div class="contact-content section-content">
+        <section class="contact" id="contact">
+          <div class="contact-content section-content" data-aos="fade-down" data-aos-delay="900">
             <h2 class="h3 section-title">Get In Touch</h2>
 
             <p class="section-text">
@@ -372,14 +363,12 @@
     src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
   ></script>
 
-  <!-- <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script> -->
-
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
   <script>
     AOS.init({
       once: true,
-      duration: 1000,
+      duration: 500,
     });
   </script>
 </html>
