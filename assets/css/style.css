@@ -515,6 +515,7 @@ main {
   margin-right: 10px;
   background: var(--bg-secondary);
   border-radius: 50%;
+  /* filter: drop-shadow(0 0 0.75rem var(--shadow)); */
   transition: 0.25s ease;
 }
 .hero .social-media a:hover {
@@ -682,11 +683,6 @@ main {
 .project h3,
 p {
   color: var(--color-primary);
-  line-height: 1.6;
-}
-.project
-p {
-  color: var(--color-secondary);
   line-height: 1.6;
 }
 .project .project-card img {
