@@ -1,3 +1,5 @@
+window.location.href.split("#")[0];
+
 // toggle icon navbar
 let menuIcon = document.querySelector("#menu-icon");
 let navbar = document.querySelector(".navbar");
