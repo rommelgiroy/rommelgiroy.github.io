@@ -1,4 +1,13 @@
-window.location.href.split("#")[0];
+if (window.location.hash) {
+  // Check if there is a hash in the URL
+  var newURL = window.location.href.replace(window.location.hash, "");
+
+  // Replace the current state in the history without triggering a page refresh
+  history.replaceState({}, document.title, newURL);
+
+  // Alternatively, you can use the following line to remove the hash without updating the URL in the browser
+  // history.replaceState(null, null, window.location.pathname);
+}
 
 // toggle icon navbar
 let menuIcon = document.querySelector("#menu-icon");
