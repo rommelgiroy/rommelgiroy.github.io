@@ -1,13 +1,17 @@
-if (window.location.hash) {
-  // Check if there is a hash in the URL
-  var newURL = window.location.href.replace(window.location.hash, "");
-
-  // Replace the current state in the history without triggering a page refresh
-  history.replaceState({}, document.title, newURL);
-
-  // Alternatively, you can use the following line to remove the hash without updating the URL in the browser
-  // history.replaceState(null, null, window.location.pathname);
+function removeLocationHash() {
+  var noHashURL = window.location.href.replace(/#.*$/, "");
+  window.history.replaceState("", document.title, noHashURL);
 }
+window.addEventListener("popstate", function (event) {
+  removeLocationHash();
+});
+window.addEventListener("hashchange", function (event) {
+  event.preventDefault();
+  removeLocationHash();
+});
+window.addEventListener("load", function () {
+  removeLocationHash();
+});
 
 // toggle icon navbar
 let menuIcon = document.querySelector("#menu-icon");
